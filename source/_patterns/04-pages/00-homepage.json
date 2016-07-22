@@ -3,41 +3,41 @@
 	"bodyClass": "home",
 	"emergency" : false,
     "imgHero" : {
-  	  "src": "../../images/sample/hero-forest.jpg",
-      "alt": "Forest"
+  	  "src": "../../images/sample/hero_lariver.jpg",
+      "alt": "LA River"
     },
     "headline" : {
-        "medium" : "Track your hikes. Challenge your friends. Get out there and start exploring."
+        "medium" : "Moving science to action"
     },
 	"toutList" : [
       {
 		"url": "link.pages-blog-detail",
 		"headline": {
-			"short" : "Best winter hikes around the world"
+			"short" : "College kids: What will their lives be like?"
 		},
 		"imgLandscape" : {
-	  	  "src": "../../images/sample/tout-winter-hiker.jpg",
-	        "alt": "Hiker with back pack walking in snow"
+	  	  "src": "../../images/sample/blog-millennials.jpg",
+	        "alt": "College kids"
 	    }
 	  },
       {
 		"url": "link.pages-login",
 		"headline": {
-			"short" : "Sign in to view your dashboard"
+			"short" : "Los Angeles is a metropolitan den for mountain lions"
 		},
 		"imgLandscape" : {
-	  	  "src": "../../images/sample/tout-leaves.jpg",
-	        "alt": "Green Leaves"
+	  	  "src": "../../images/sample/blog_lion.jpg",
+	        "alt": "Mountain Lion"
 	    }
 	  },
       {
 		"url" : "link.pages-about",
 		"headline": {
-			"short" : "Learn about our mission"
+			"short" : "Bug banquet – Metta World Peace & UCLA students eat crickets"
 		},
 		"imgLandscape" : {
-	  	  "src": "../../images/sample/tout-mountains.jpg",
-	        "alt": "Mountain"
+	  	  "src": "../../images/sample/blog-mettaworldpeace.jpg",
+	        "alt": "Metta World Peace"
 	    }
 	  }
     ],
@@ -52,14 +52,14 @@
 			{
 				"url" : "link.pages-blog-detail",
 				"imgSquare" : {
-					"src": "../../../images/sample/blog-mtns3.jpg",
+					"src": "../../../images/sample/blog_lion.jpg",
 					"alt": "red mountains"
 				},
 				"headline" : {
-					"short" : "Hardest Hikes in the World"
+					"short" : "Los Angeles is a metropolitan den for mountain lions"
 				},
 				"excerpt" : {
-					"medium" : "The world delivers a multitude of daunting hikes. How difficult? We have listed some of the most strenuous hikes in the world."
+					"medium" : "Los Angeles is one of only two megacities—Mumbai, India, is the other—where large predatory cats live among us, and they’re closer to human development than you might think."
 				}
 				
 			},

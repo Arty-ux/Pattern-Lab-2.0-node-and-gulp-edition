@@ -8,6 +8,32 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2));
 
+var sass = require('gulp-sass');
+var plumber = require('gulp-plumber');
+var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer  = require('gulp-autoprefixer');
+
+gulp.task('sass', function(){
+  return gulp.src('source/css/**/*.scss')
+    .pipe(plumber('Error Running Sass'))
+    // Initialize sourcemap
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      precision: 5,
+      outputStyle: 'expanded'
+    }))
+    .pipe(autoprefixer('last 2 versions'))
+    // Writing sourcemaps
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest('public/css'))
+    // Tells Browser Sync to reload files task is done
+    .pipe(browserSync.reload({
+    stream: true
+    }))
+})
+
+
+
 /******************************************************
  * COPY TASKS - stream assets from source to destination
 ******************************************************/
