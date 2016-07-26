@@ -2,4 +2,4 @@
 title: Horizontal Rule
 ---
 
-[Insert description here]
+[Here is a description about a horizontal rule tag]

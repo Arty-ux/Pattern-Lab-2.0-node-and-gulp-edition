@@ -16,17 +16,14 @@ var autoprefixer  = require('gulp-autoprefixer');
 gulp.task('sass', function(){
   return gulp.src('source/css/**/*.scss')
     .pipe(plumber('Error Running Sass'))
-    // Initialize sourcemap
     .pipe(sourcemaps.init())
     .pipe(sass({
       precision: 5,
       outputStyle: 'expanded'
     }))
     .pipe(autoprefixer('last 2 versions'))
-    // Writing sourcemaps
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('public/css'))
-    // Tells Browser Sync to reload files task is done
     .pipe(browserSync.reload({
     stream: true
     }))
@@ -107,6 +104,7 @@ function build(done) {
 
 gulp.task('pl-assets', gulp.series(
   gulp.parallel(
+    'sass',
     'pl-copy:js',
     'pl-copy:img',
     'pl-copy:favicon',
